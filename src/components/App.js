@@ -1,21 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./styles/app.scss";
-import Home from "./pages/Home.page";
+import { routes } from "../routes";
 
-const routes = [
-	{
-		path: "/",
-		component: Home,
-	},
-];
+// Styles
+import "../styles/app.scss";
 
 function App() {
 	return (
 		<Router>
 			<Switch>
 				{routes.map((route, i) => (
-					<Route exact path={route.path} render={route.component} key={i} />
+					<Route exact {...route} key={i} />
 				))}
 			</Switch>
 		</Router>
