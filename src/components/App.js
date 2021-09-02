@@ -4,15 +4,18 @@ import { routes } from "../routes";
 
 // Styles
 import "../styles/app.scss";
+import Layout from "./layout/Layout";
 
 function App() {
 	return (
 		<Router>
-			<Switch>
-				{routes.map((route, i) => (
-					<Route exact {...route} key={i} />
-				))}
-			</Switch>
+			<Layout>
+				<Switch>
+					{routes.map((route, i) => (
+						<Route exact {...route} key={i} />
+					))}
+				</Switch>
+			</Layout>
 		</Router>
 	);
 }
