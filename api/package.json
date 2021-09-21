@@ -1,0 +1,13 @@
+{
+  "name": "ArtExhibitionAPI",
+  "version": "1.0.0",
+  "description": "API server for Art Exhibition Project",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dot-env": "^0.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.7"
+  }
+}
