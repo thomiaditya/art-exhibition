@@ -32,6 +32,8 @@ This project is a web project for art exhibition. We created this project to pro
 
 ### Built With
 
+We build this project with the best web framework at the moment. We make sure everything is alright.
+
 - [React.js](https://reactjs.org/)
 - [Express.js](https://expressjs.com/)
 - [MongoDB](https://www.mongodb.com/)
