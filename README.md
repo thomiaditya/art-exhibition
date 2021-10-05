@@ -79,8 +79,6 @@ Before you run the project server, you must install the packages. You can use `y
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 <!-- LICENSE -->
 
 ## License
