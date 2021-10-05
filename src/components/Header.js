@@ -1,10 +1,11 @@
 import React from "react";
 
 const Header = () => {
+	const backgroundPos = "-200px";
+
 	return (
-		<section className="header">
-			<div className="image-container"></div>
-			<div className="container">Test</div>
+		<section className="header" style={{ backgroundPositionY: backgroundPos }}>
+			<div className="container"></div>
 		</section>
 	);
 };
