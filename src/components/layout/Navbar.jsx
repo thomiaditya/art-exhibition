@@ -1,21 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Menu from "./Menu";
 
 const Navbar = () => {
-	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-	useEffect(() => {
-		window.addEventListener("resize", () => {
-			setWindowWidth(window.innerWidth);
-			console.log(windowWidth);
-		});
-	}, []);
-
 	return (
 		<nav>
 			<div className="container nav-wrapper">
-				<div className="flexbox fb-space-between nav-items">
+				<div className="flexbox fb-space-between nav-items fb-vcenter">
 					<div className="nav-left">
 						<Link to="/">
 							<span>Artisan.</span>
@@ -38,6 +29,12 @@ const Navbar = () => {
 								stroke-linejoin="round"
 							/>
 						</svg>
+					</div>
+
+					<div className="hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
 					</div>
 				</div>
 				<div className="nav-center">

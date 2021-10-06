@@ -1,7 +1,7 @@
 nav {
 	height: 94px;
 	width: 100%;
-	font-family: "Gilmer Bold", Arial, Helvetica, sans-serif;
+	font-family: "Gilmer", Arial, Helvetica, sans-serif;
 	font-weight: 700;
 	position: sticky;
 	.nav-wrapper {
@@ -14,16 +14,39 @@ nav {
 
 		.nav-left {
 			span {
-				font-family: "Gilmer Heavy", Arial, Helvetica, sans-serif;
+				font-family: "Gilmer", Arial, Helvetica, sans-serif;
 				font-weight: 800;
 				font-size: 24px;
 			}
 		}
 
 		.nav-right {
+			@include media("<=832px") {
+				display: none;
+			}
 			span {
 				font-size: 12px;
 				margin-right: 10px;
+			}
+		}
+
+		.hamburger {
+			width: 15px;
+			@include media(">832px") {
+				display: none;
+			}
+
+			span {
+				display: block;
+				margin-bottom: 2px;
+				height: 2px;
+				width: 100%;
+				background-color: black;
+
+				&:nth-child(3) {
+					margin-bottom: 0;
+					width: 50%;
+				}
 			}
 		}
 

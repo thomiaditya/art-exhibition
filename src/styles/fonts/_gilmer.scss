@@ -1,24 +1,47 @@
 @font-face {
 	font-family: "Gilmer";
-	src: url("../fonts/Gilmer Regular.woff") format("woff");
+	src: url("gilmer/Gilmer Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-	font-family: "Gilmer Bold";
-	src: url("../fonts/Gilmer Bold.woff") format("woff");
+	font-family: "Gilmer";
+	src: url("gilmer/Gilmer Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-	font-family: "Gilmer Heavy";
-	src: url("../fonts/Gilmer Heavy.woff") format("woff");
+	font-family: "Gilmer";
+	src: url("gilmer/Gilmer Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-	font-family: "Gilmer Light";
-	src: url("../fonts/Gilmer Light.woff") format("woff");
+	font-family: "Gilmer Outline";
+	src: url("gilmer/Gilmer Outline.woff") format("woff");
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-	font-family: "Gilmer Medium";
-	src: url("../fonts/Gilmer Medium.woff") format("woff");
+	font-family: "Gilmer";
+	src: url("gilmer/Gilmer Heavy.woff") format("woff");
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilmer";
+	src: url("gilmer/Gilmer Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
 }

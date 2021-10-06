@@ -1,0 +1,213 @@
+.header {
+	margin-bottom: 100px;
+	@include media("<=1280px") {
+		margin-bottom: 250px;
+	}
+	.bp-box {
+		display: grid;
+		width: 100%;
+		min-height: 725px;
+		grid-template-columns: 583px auto;
+		position: relative;
+
+		@include media("<laptop") {
+			grid-template-columns: repeat(1, 1fr);
+		}
+
+		.lf-img {
+			position: relative;
+			height: 100%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+
+			@include media("<laptop") {
+				height: 700px;
+			}
+
+			@include media("<=phone") {
+				height: 500px;
+			}
+
+			span {
+				&.score {
+					font-family: "Roxborough CF", Verdana, Geneva, Tahoma, sans-serif;
+					font-style: normal;
+					font-weight: 900;
+					font-size: 4em; // 64px
+					line-height: 100.5%;
+					text-transform: capitalize;
+					font-feature-settings: "pnum" on, "lnum" on;
+					color: #ffffff;
+					position: absolute;
+					bottom: 24px;
+					left: 36px;
+					z-index: 1;
+				}
+
+				&.share {
+					font-family: "Roxborough CF", Verdana, Geneva, Tahoma, sans-serif;
+					font-style: normal;
+					font-weight: 700;
+					font-size: 0.875em; //14px
+					line-height: 100.5%;
+					text-align: right;
+					font-feature-settings: "pnum" on, "lnum" on;
+					color: #ffffff;
+					position: absolute;
+					bottom: 24px;
+					right: 36px;
+					z-index: 1;
+				}
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 222px;
+				bottom: 0;
+				left: 0;
+				background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+			}
+		}
+		.rg-meta {
+			height: 100%;
+			padding-left: 40px;
+			position: relative;
+
+			@include media("<=1280px") {
+				position: static;
+				font-size: 14px;
+			}
+
+			@include media("<1024px") {
+				font-size: 12px;
+				padding-left: 0;
+				padding-top: 20px;
+			}
+
+			.bp-subject {
+				h6 {
+					text-transform: uppercase;
+					letter-spacing: 0.155em;
+					color: #ababab;
+					font-style: normal;
+					font-weight: 100;
+					line-height: 118.5%;
+					margin-bottom: 8px;
+					font-size: 0.875em; //14px
+					margin-top: 5px;
+				}
+				h1 {
+					font-family: "Roxborough CF", Verdana, Geneva, Tahoma, sans-serif;
+					font-style: normal;
+					font-weight: 900;
+					font-size: 8em; //128px
+					letter-spacing: -0.065em;
+					text-transform: capitalize;
+					line-height: 100.5%;
+					color: #292929;
+					margin-bottom: 31px;
+				}
+				.p-desc {
+					display: flex;
+					gap: 15px;
+					p.p-abst {
+						max-width: 716px;
+						font-family: "Gilmer";
+						font-style: normal;
+						font-weight: 300;
+						font-size: 0.75em; //12px
+						line-height: 186.5%;
+						font-feature-settings: "pnum" on, "lnum" on, "kern" off;
+						color: #383838;
+					}
+
+					ul.p-md {
+						li {
+							list-style-type: none;
+							font-family: "Roxborough CF", Verdana, Geneva, Tahoma, sans-serif;
+							font-style: normal;
+							font-weight: bold;
+							font-size: 0.875em; //14px
+							line-height: 100.5%;
+							letter-spacing: 0.015em;
+							font-feature-settings: "pnum" on, "onum" on;
+							color: #292929;
+							margin-bottom: 6.5px;
+						}
+					}
+				}
+
+				.p-bot {
+					position: absolute;
+					bottom: 0;
+					width: calc(100% - 41px);
+					justify-content: space-between;
+					align-items: flex-end;
+					gap: 44px;
+
+					@include media("<=1280px") {
+						width: 100%;
+						bottom: -150px;
+						left: 0;
+					}
+
+					@include media("<=500px") {
+						font-size: 8px;
+					}
+
+					@include media("<=375px") {
+						font-size: 7px;
+					}
+					@include media("<=320px") {
+						font-size: 6px;
+					}
+
+					span.line {
+						width: 100%;
+						height: 1.5px;
+						background-color: black;
+						position: relative;
+						bottom: 31px;
+					}
+					h2 {
+						font-family: "Roxborough CF", Verdana, Geneva, Tahoma, sans-serif;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 4.5em; //72px
+						line-height: 100.5%;
+						text-transform: capitalize;
+						font-feature-settings: "pnum" on, "lnum" on;
+						color: #292929;
+						span {
+							display: block;
+						}
+
+						&.month {
+							span {
+								font-size: 0.44444em; //36px
+								line-height: 100.5%;
+								text-align: right;
+							}
+						}
+					}
+
+					.author {
+						position: relative;
+						img.signature {
+							position: absolute;
+							top: 50%;
+							right: 50%;
+							transform: translate(50%, -50%);
+							width: 100%;
+							opacity: 10%;
+							z-index: -1;
+						}
+					}
+				}
+			}
+		}
+	}
+}

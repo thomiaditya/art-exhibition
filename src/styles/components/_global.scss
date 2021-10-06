@@ -15,17 +15,20 @@ a {
 }
 
 .container {
-	max-width: 1688px;
+	max-width: 1738px;
 	margin: 0 auto;
 	padding: 0 50px;
+
+	@include media("<=phone") {
+		padding: 0 30px;
+	}
 }
 
 .flexbox {
 	display: flex;
-	align-items: center;
 }
 
-fb-vcenter {
+.fb-vcenter {
 	align-items: center;
 }
 
