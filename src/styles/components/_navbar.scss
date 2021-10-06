@@ -1,2 +1,49 @@
 nav {
+	height: 94px;
+	width: 100%;
+	font-family: "Gilmer Bold", Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	position: sticky;
+	.nav-wrapper {
+		position: relative;
+		height: 100%;
+
+		.nav-items {
+			height: 100%;
+		}
+
+		.nav-left {
+			span {
+				font-family: "Gilmer Heavy", Arial, Helvetica, sans-serif;
+				font-weight: 800;
+				font-size: 24px;
+			}
+		}
+
+		.nav-right {
+			span {
+				font-size: 12px;
+				margin-right: 10px;
+			}
+		}
+
+		.nav-center {
+			position: absolute;
+			top: 50%;
+			right: 50%;
+			transform: translate(50%, -50%);
+
+			@include media("<=832px") {
+				display: none;
+			}
+
+			ul.nav-list {
+				li {
+					font-size: 12px;
+					margin: 0 20px;
+					display: inline;
+				}
+			}
+		}
+	}
 }

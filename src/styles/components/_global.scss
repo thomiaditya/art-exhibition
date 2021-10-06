@@ -15,8 +15,9 @@ a {
 }
 
 .container {
-	max-width: 1720px;
+	max-width: 1688px;
 	margin: 0 auto;
+	padding: 0 50px;
 }
 
 .flexbox {
@@ -24,6 +25,10 @@ a {
 	align-items: center;
 }
 
-.v-space-between {
+fb-vcenter {
+	align-items: center;
+}
+
+.fb-space-between {
 	justify-content: space-between;
 }
