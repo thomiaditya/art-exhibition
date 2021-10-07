@@ -1,5 +1,9 @@
 article.bp-last {
 	margin-bottom: 66px;
+
+	@include media("<=715px") {
+		margin-bottom: 30px;
+	}
 	.bp-last-wrapper {
 		max-width: 1178px;
 		margin: 0 auto;
@@ -173,6 +177,9 @@ article.bp-last {
 					text-transform: uppercase;
 					font-feature-settings: "pnum" on, "onum" on;
 					color: #ababab;
+					@include media("<=715px") {
+						margin-bottom: 2px;
+					}
 				}
 
 				h1 {
@@ -186,6 +193,10 @@ article.bp-last {
 					text-transform: capitalize;
 					font-feature-settings: "pnum" on, "lnum" on, "kern" off;
 					color: #292929;
+
+					@include media("<=715px") {
+						margin-bottom: 10px;
+					}
 
 					&.show-ph {
 						@include media("<=phone") {

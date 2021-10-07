@@ -4,6 +4,9 @@ nav {
 	font-family: "Gilmer", Arial, Helvetica, sans-serif;
 	font-weight: 700;
 	position: sticky;
+	background-color: white;
+	z-index: 10;
+	top: 0;
 	.nav-wrapper {
 		position: relative;
 		height: 100%;
