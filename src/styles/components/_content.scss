@@ -29,11 +29,11 @@ article.bp-last {
 			position: relative;
 			display: grid;
 			grid-template-columns: 401px auto;
-			min-height: 499px;
+			min-height: 360px;
 
 			@include media("<=780px") {
 				grid-template-columns: 350px auto;
-				min-height: 450px;
+				min-height: 300px;
 			}
 
 			@include media("<=715px") {
@@ -164,6 +164,10 @@ article.bp-last {
 					@include media("<=950px") {
 						padding-right: 20px;
 					}
+
+					h2.artist-bt {
+						float: right;
+					}
 				}
 
 				h6 {
@@ -208,6 +212,7 @@ article.bp-last {
 				.ct-desc {
 					width: 100%;
 					gap: 32px;
+					margin-bottom: 1.5em;
 
 					@include media("<=375px") {
 						gap: 10px;
