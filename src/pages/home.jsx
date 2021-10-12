@@ -1,12 +1,12 @@
 import React from "react";
 import Content from "../components/home/Content";
 import Header from "../components/home/Header";
+import Discover from "../components/home/Discover";
 
 import imgUrl from "../assets/lady-with-an-enim.jpg";
 import signature from "../assets/leonardo-signature.png";
 
 import salvaUrl from "../assets/the-last-supper.jpg";
-import Discover from "../components/home/Discover";
 
 const Home = () => {
 	const header = {
@@ -46,6 +46,13 @@ const Home = () => {
 			<Content direction="right" data={content} />
 			<Content direction="left" data={content} />
 			<Discover description="Not just above, we also have other <i>painting masterpieces</i> ready to see! " />
+
+			<Header data={header} />
+			<Content direction="right" data={content} />
+			<Content direction="left" data={content} />
+			<Content direction="right" data={content} />
+			<Content direction="left" data={content} />
+			<Discover description="Love to read books? Read another <i>writing masterpieces</i> here!" />
 		</>
 	);
 };
