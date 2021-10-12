@@ -45,7 +45,7 @@ const Home = () => {
 			<Content direction="left" data={content} />
 			<Content direction="right" data={content} />
 			<Content direction="left" data={content} />
-			<Discover />
+			<Discover description="Not just above, we also have other <i>painting masterpieces</i> ready to see! " />
 		</>
 	);
 };
