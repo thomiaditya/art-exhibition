@@ -1,5 +1,14 @@
 section.discover {
 	margin-bottom: 140px;
+	@include media("<=480px") {
+		font-size: 14px;
+	}
+	@include media("<=425px") {
+		font-size: 12px;
+	}
+	@include media("<=375px") {
+		font-size: 10px;
+	}
 	.wrapper {
 		margin: 0 0 0 auto;
 		max-width: 1339px;
@@ -15,6 +24,13 @@ section.discover {
 				/* or 36px */
 				font-feature-settings: "pnum" on, "lnum" on;
 				color: #000000;
+				@include media("<=425px") {
+					width: 300px;
+				}
+
+				@include media("<=375px") {
+					width: 300px;
+				}
 			}
 
 			.discover-btn {
