@@ -7,6 +7,7 @@ import imgUrl from "../assets/lady-with-an-enim.jpg";
 import signature from "../assets/leonardo-signature.png";
 
 import salvaUrl from "../assets/the-last-supper.jpg";
+import Qualified from "../components/home/Qualified";
 
 const Home = () => {
 	const header = {
@@ -53,6 +54,8 @@ const Home = () => {
 			<Content direction="right" data={content} />
 			<Content direction="left" data={content} />
 			<Discover description="Love to read books? Read another <i>writing masterpieces</i> here!" />
+
+			<Qualified />
 		</>
 	);
 };

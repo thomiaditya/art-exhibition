@@ -1,0 +1,52 @@
+section.qualified {
+	margin-bottom: 140px;
+	.ctn-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h2 {
+			max-width: 902px;
+			margin-bottom: 0.40625em;
+			font-family: "Roxborough CF";
+			font-style: normal;
+			font-weight: normal;
+			font-size: 4em;
+			line-height: 100.5%;
+			/* or 64px */
+			text-align: center;
+			font-feature-settings: "pnum" on, "lnum" on;
+			color: #000000;
+			i {
+				font-weight: bold;
+			}
+		}
+
+		p {
+			margin-bottom: 4.27272727273em;
+			font-family: "Gilmer";
+			font-style: normal;
+			font-weight: 300;
+			font-size: 0.6875em;
+			line-height: 186.5%;
+			/* identical to box height, or 21px */
+			text-align: center;
+			font-feature-settings: "pnum" on, "lnum" on, "kern" off;
+			color: #000000;
+		}
+
+		.btn-readmore {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			span {
+				font-family: "Gilmer", sans-serif;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 0.75em;
+				line-height: 14px;
+				// text-align: right;
+				color: #000000;
+			}
+		}
+	}
+}

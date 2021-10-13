@@ -1,0 +1,106 @@
+footer {
+	.top {
+		margin-bottom: 99px;
+		.lf-nav {
+			& * {
+				margin-bottom: 20px;
+			}
+
+			h6 {
+				font-family: "Gilmer";
+				font-style: normal;
+				font-weight: 300;
+				font-size: 14px;
+				line-height: 100.5%;
+				/* identical to box height, or 14px */
+				letter-spacing: 0.03em;
+				font-feature-settings: "pnum" on, "lnum" on;
+				color: #000000;
+			}
+
+			ul {
+				span {
+					font-family: "Gilmer";
+					font-style: normal;
+					font-weight: 300;
+					font-size: 14px;
+					line-height: 100.5%;
+					/* identical to box height, or 14px */
+					letter-spacing: 0.03em;
+					font-feature-settings: "pnum" on, "lnum" on;
+					color: #000000;
+					margin-right: 13px;
+				}
+				li {
+					margin-right: 13px;
+					list-style-type: none;
+					display: inline;
+					font-family: "Gilmer";
+					font-style: normal;
+					font-weight: bold;
+					font-size: 14px;
+					line-height: 17px;
+					text-transform: capitalize;
+					color: #000000;
+
+					&:last-child {
+						margin: 0;
+					}
+				}
+			}
+		}
+		.rg-nav {
+			font-family: "Roxborough CF";
+			font-style: normal;
+			font-weight: normal;
+			font-size: 24px;
+			line-height: 100.5%;
+			/* or 24px */
+			text-align: right;
+			font-feature-settings: "pnum" on, "lnum" on;
+			color: #000000;
+			max-width: 386px;
+
+			strong {
+				font-style: italic;
+				text-decoration-line: underline;
+			}
+		}
+	}
+
+	.bottom {
+		padding-bottom: 23px;
+		.lf {
+			ul {
+				li {
+					display: inline;
+					list-style-type: none;
+
+					font-family: "Gilmer";
+					font-style: normal;
+					font-weight: 300;
+					font-size: 12px;
+					line-height: 100.5%;
+					/* identical to box height, or 12px */
+					letter-spacing: 0.03em;
+					font-feature-settings: "pnum" on, "lnum" on;
+					color: #000000;
+					margin-right: 20px;
+				}
+			}
+		}
+
+		.rg {
+			font-family: "Gilmer", sans-serif;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 12px;
+			line-height: 100.5%;
+			/* identical to box height, or 12px */
+			text-align: right;
+			letter-spacing: 0.03em;
+			font-feature-settings: "pnum" on, "lnum" on;
+			color: #000000;
+		}
+	}
+}
