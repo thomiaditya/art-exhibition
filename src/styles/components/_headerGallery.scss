@@ -1,0 +1,33 @@
+section.hdr-gallery {
+	.container {
+		h1 {
+			font-family: "Roxborough CF", serif;
+			font-style: normal;
+			font-weight: 900;
+			font-size: 128px;
+			line-height: 100.5%;
+			/* identical to box height, or 129px */
+			text-align: center;
+			letter-spacing: -0.065em;
+			text-transform: capitalize;
+			font-feature-settings: "pnum" on, "lnum" on, "kern" off;
+			color: #292929;
+		}
+		p {
+			font-family: "Gilmer", sans-serif;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 11px;
+			line-height: 186.5%;
+			/* identical to box height, or 21px */
+			margin-top: 23px;
+			text-align: center;
+			font-feature-settings: "pnum" on, "lnum" on, "kern" off;
+			color: #000000;
+
+			i {
+				font-weight: bold;
+			}
+		}
+	}
+}

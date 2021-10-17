@@ -16,6 +16,10 @@ const Menu = () => {
 			route: "/gallery",
 		},
 		{
+			name: "Bookshelf",
+			route: "/bookshelf",
+		},
+		{
 			name: "About",
 			route: "/about",
 		},
