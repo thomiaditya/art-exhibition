@@ -1,6 +1,12 @@
 footer {
 	.top {
 		margin-bottom: 99px;
+		flex-wrap: wrap-reverse;
+
+		@include media("<=967px") {
+			gap: 20px;
+		}
+
 		.lf-nav {
 			& * {
 				margin-bottom: 20px;
@@ -10,7 +16,7 @@ footer {
 				font-family: "Gilmer";
 				font-style: normal;
 				font-weight: 300;
-				font-size: 14px;
+				font-size: (14 / 16) * 1em;
 				line-height: 100.5%;
 				/* identical to box height, or 14px */
 				letter-spacing: 0.03em;
@@ -23,13 +29,17 @@ footer {
 					font-family: "Gilmer";
 					font-style: normal;
 					font-weight: 300;
-					font-size: 14px;
+					font-size: (14 / 16) * 1em;
 					line-height: 100.5%;
 					/* identical to box height, or 14px */
 					letter-spacing: 0.03em;
 					font-feature-settings: "pnum" on, "lnum" on;
 					color: #000000;
 					margin-right: 13px;
+
+					@include media("<=425px") {
+						display: none;
+					}
 				}
 				li {
 					margin-right: 13px;
@@ -38,7 +48,7 @@ footer {
 					font-family: "Gilmer";
 					font-style: normal;
 					font-weight: bold;
-					font-size: 14px;
+					font-size: (14 / 16) * 1em;
 					line-height: 17px;
 					text-transform: capitalize;
 					color: #000000;
@@ -53,13 +63,17 @@ footer {
 			font-family: "Roxborough CF";
 			font-style: normal;
 			font-weight: normal;
-			font-size: 24px;
+			font-size: (24 / 16) * 1em;
 			line-height: 100.5%;
 			/* or 24px */
 			text-align: right;
 			font-feature-settings: "pnum" on, "lnum" on;
 			color: #000000;
 			max-width: 386px;
+
+			@include media("<=967px") {
+				text-align: left;
+			}
 
 			strong {
 				font-style: italic;
@@ -70,6 +84,8 @@ footer {
 
 	.bottom {
 		padding-bottom: 23px;
+		flex-wrap: wrap;
+		gap: 20px;
 		.lf {
 			ul {
 				li {
@@ -94,7 +110,7 @@ footer {
 			font-family: "Gilmer", sans-serif;
 			font-style: normal;
 			font-weight: 300;
-			font-size: 12px;
+			font-size: (12 / 16) * 1em;
 			line-height: 100.5%;
 			/* identical to box height, or 12px */
 			text-align: right;

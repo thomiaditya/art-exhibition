@@ -9,7 +9,7 @@ const Navbar = () => {
 				<div className="flexbox fb-space-between nav-items fb-vcenter">
 					<div className="nav-left">
 						<Link to="/">
-							<span>Artisan.</span>
+							<span>artisan.</span>
 						</Link>
 					</div>
 					<Link to="/">

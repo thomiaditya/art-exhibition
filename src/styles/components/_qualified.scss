@@ -19,6 +19,10 @@ section.qualified {
 			i {
 				font-weight: bold;
 			}
+
+			@include media("<=425px") {
+				font-size: 3em;
+			}
 		}
 
 		p {
