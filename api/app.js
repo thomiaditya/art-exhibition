@@ -1,5 +1,8 @@
 const express = require("express");
+const passport = require("passport");
+
 const app = express();
+
 require("dotenv").config();
 
 /**
@@ -13,7 +16,7 @@ require("./config/database");
 require("./models");
 
 /**
- * Instead of using body-parser middleware, use the new Express implementation of the same thing.
+ * Using the express new implementation of bodyparser to parse request data in javascript object format.
  */
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -21,14 +24,13 @@ app.use(express.urlencoded({ extended: true }));
 /**
  * Define all api routes, available in routes directory.
  */
-app.use("/api/v1", require("./routes"));
-console.log(app._router);
+app.use(require("./routes"));
 
 /**
  * Starting the server.
  */
-const port = process.env.PORT;
+const PORT = process.env.API_PORT;
 
-app.listen(port, () => {
-	console.log(`Listening on http://localhost:${port}/ ...`);
+app.listen(PORT, () => {
+	console.log(`Listening on http://localhost:${PORT}/ ...`);
 });

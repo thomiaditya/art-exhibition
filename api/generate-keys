@@ -1,0 +1,32 @@
+const crypto = require("crypto");
+const fs = require("fs");
+
+const generateKeyPair = (folderLocation) => {
+	let keyPair = crypto.generateKeyPairSync("rsa", {
+		modulusLength: 4096, // bits - standard for RSA keys
+		publicKeyEncoding: {
+			type: "pkcs1", // "Public Key Cryptography Standards 1"
+			format: "pem", // Most common formatting choice
+		},
+		privateKeyEncoding: {
+			type: "pkcs1", // "Public Key Cryptography Standards 1"
+			format: "pem", // Most common formatting choice
+		},
+	});
+
+	fs.writeFile(folderLocation + "/id_rsa_pub.pem", keyPair.publicKey, (err) => {
+		if (err) throw err;
+		console.log("Public key created!");
+	});
+
+	fs.writeFile(
+		folderLocation + "/id_rsa_priv.pem",
+		keyPair.privateKey,
+		(err) => {
+			if (err) throw err;
+			console.log("Private key created!");
+		}
+	);
+};
+
+generateKeyPair(__dirname);
