@@ -14,13 +14,13 @@ const generateKeyPair = (folderLocation) => {
 		},
 	});
 
-	fs.writeFile(folderLocation + "/id_rsa_pub.pem", keyPair.publicKey, (err) => {
+	fs.writeFile(folderLocation + "/id_rsa.pub", keyPair.publicKey, (err) => {
 		if (err) throw err;
 		console.log("Public key created!");
 	});
 
 	fs.writeFile(
-		folderLocation + "/id_rsa_priv.pem",
+		folderLocation + "/id_rsa",
 		keyPair.privateKey,
 		(err) => {
 			if (err) throw err;
