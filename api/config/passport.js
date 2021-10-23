@@ -1,5 +1,9 @@
 const mongoose = require("mongoose");
 const fs = require("fs");
+const path = require("path");
+
+const keyPath = path.join(__dirname, "..", "id_rsa.pub");
+const PUB_KEY = fs.readFileSync(keyPath, "utf-8");
 
 /**
  * Verify Method
@@ -9,5 +13,5 @@ const fs = require("fs");
  * @param {passport} passport
  */
 module.exports = (passport) => {
-	// TODO Create passport configuration here.
+	// TODO: Create passport configuration here.
 };
