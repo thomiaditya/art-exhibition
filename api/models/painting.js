@@ -6,6 +6,7 @@ const Schema = mongoose.Schema;
  *
  * Title -> String
  * Description -> Long Text
+ * Image Path -> String
  * Author -> Author Collection
  * Publisher -> Users Collection
  * Place -> Location or Places Collection
@@ -17,7 +18,7 @@ const Schema = mongoose.Schema;
 const paintingSchema = new mongoose.Schema({
 	title: String,
 	desc: String,
-	// TODO: Create author model.
+	image_path: String,
 	author: {
 		type: Schema.Types.ObjectId,
 		ref: "Author",
