@@ -6,7 +6,9 @@ router.post(
 	"/register",
 	body("username").isString(),
 	body("password").isString(),
-	body("fullname").isString(),
+	body("first_name").isString(),
+	body("last_name").isString(),
+	body("photo_path").isString(),
 	require("../controllers/userController").register
 );
 

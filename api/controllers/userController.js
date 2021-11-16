@@ -17,7 +17,10 @@ module.exports = {
 			username: req.body.username,
 			hash: hash,
 			salt: salt,
-			full_name: req.body.fullname,
+			first_name: req.body.first_name,
+			last_name: req.body.last_name,
+			desc: req.body.desc,
+			photo_path: req.body.photo_path,
 		});
 
 		// Save new user configure above.

@@ -21,6 +21,7 @@
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"api": "node api/app.js",
+		"dev-api": "nodemon api/app.js",
 		"init": "npm install && cd api && npm install"
 	},
 	"eslintConfig": {

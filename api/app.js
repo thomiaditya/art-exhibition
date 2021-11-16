@@ -20,7 +20,7 @@ require("./config/database");
 /**
  * Automatically require all models from models directory.
  */
-require("./models");
+require("./models/_models.js");
 
 /**
  * Import the configuration file and pass the local passport object through the config.
@@ -46,7 +46,7 @@ app.use(cors());
 /**
  * Define all api routes, available in routes directory.
  */
-app.use(require("./routes"));
+app.use(require("./routes/_routes"));
 
 /**
  * Starting the server.

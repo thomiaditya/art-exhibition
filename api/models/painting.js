@@ -19,19 +19,18 @@ const paintingSchema = new mongoose.Schema({
 	title: String,
 	desc: String,
 	image_path: String,
-	author: {
-		type: Schema.Types.ObjectId,
-		ref: "Author",
-	},
+	// author: {
+	// 	type: Schema.Types.ObjectId,
+	// 	ref: "Author",
+	// },
 	publisher: {
 		type: Schema.Types.ObjectId,
 		ref: "User",
 	},
-	// TODO: Create location model.
-	place: {
-		type: Schema.Types.ObjectId,
-		ref: "Location",
-	},
+	// place: {
+	// 	type: Schema.Types.ObjectId,
+	// 	ref: "Location",
+	// },
 	signature: String,
 });
 
